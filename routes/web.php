@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controller\MensagemController;
+use App\Http\Controllers\MensagemController;
 use App\Http\Controllers\TopicoController;
 use Illuminate\Suppport\Facades\Rotes;
 

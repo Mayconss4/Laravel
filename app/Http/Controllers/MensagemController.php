@@ -17,6 +17,7 @@ class MensagemController extends Controller
     public function index()
     {
         $mensagens = Mensagem::all();
+        
         return view("restrict/mensagem", compact('mensagens'));
     }
 
@@ -28,7 +29,7 @@ class MensagemController extends Controller
     public function create()
     {
         $topicos = Topico::all();
-        return view("restrict/mensagem", compact('mensagem'));
+        return view("restrict/mensagem/create", compact('topicos'));
     }
 
     /**
